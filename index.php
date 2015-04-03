@@ -13,15 +13,12 @@
  */
     $mythumbs = mythumbs("index.xml") ;
     $myPictures = simplexml_load_file('index.xml');
-    // foreach ( $myPictures->)
-    // echo date("c") . "Pierwszy " . $myPictures->feed[1]->entry[1]->title . "Koniec";
     echo "<div class=\"container\">" ;
     echo "<div class=\"thumbs\"><center>" ;
     foreach ($myPictures->entry as $pixinfo):
         $title=$pixinfo->title;
         $link=$pixinfo->link['href'];
-        // $enclosure = $pixinfo->xpath('link[@rel="enclosure"]');
-        // $enclosure = $pixinfo->xpath('//link[@rel="enclosure"]');
+
         $enclosure = $pixinfo->xpath('*//content') ; // link->[@rel="enclosure"] ;
         foreach ( $pixinfo->link as $mylink):
             if ( $mylink['rel'] === "enclosure") {
@@ -31,8 +28,7 @@
             }
         endforeach;
         $image=str_replace("_b.jpg","_s.jpg",$enclosure['href']);
-        // var_dump("enclosure", $enclosure) ;
-        // echo "<a href=\"",$link,"\"><img src=\"",$image,"\" alt=\"",$title,"\" />", $enclosure['href'] ,"</a>\n";
+
         echo "<a href=\"",$link,"\"><img src=\"",$image,"\" alt=\"",$title,"\" />", "" ,"</a>\n";
     endforeach;
     echo "</center></div>";
