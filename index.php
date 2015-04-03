@@ -11,6 +11,11 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+
+// This file contains one stage "loader" that takes data from file and displays something
+// While reading your requirements you mentioned that there needs to be two stes
+// 1 convert XML into JSON
+// 2 parse JSON to display a slideshow
     $mythumbs = mythumbs("index.xml") ;
     $myPictures = simplexml_load_file('index.xml');
     echo "<div class=\"container\">" ;
