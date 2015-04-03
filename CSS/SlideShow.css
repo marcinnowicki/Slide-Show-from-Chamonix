@@ -1,0 +1,136 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2015-04-02, 13:08:38
+    Author     : marci_000
+*/
+
+.info {
+    _alignment-adjust: middle;
+    font-family: Verdana;
+    font-size: 10px ;
+    position:absolute;
+    float: right;
+    top: 0;
+    width: 300px;
+    _height: 80%;
+    height: 800px;
+    overflow-y:scroll;
+    top: 20px;
+    left: 1310px;
+}
+
+.big {
+    alignment-adjust: middle;
+    _background: yellow;
+    position:relative; 
+    top: 0;
+    width: 1300px;
+    _height: 80%;
+    height: 800px;
+    overflow-y:scroll;
+}
+
+.bigdesc {
+    z-index: 100;
+    font-family: Verdana ;
+    font-size: 8pt;
+    background: black;
+    color: #FFFFFF;
+    position: absolute;
+    bottom: 10px ;
+    height: 20px ;
+}
+.bigimage {
+    z-index: 1;
+    alignment-adjust: middle;
+    margin: 2px;
+    background: #CBCBCB;
+    position:relative; 
+    _top: 0;
+    float: left;
+    width: 250px;
+    height: 250px;
+    _border-width: 1px ;
+    _border-style: solid;
+    display: table-cell;
+
+}
+
+.bigimage img {
+    _max-width:100%;
+    _max-height:100%;
+    width: 250px;
+    height: 250px;
+    opacity: 0.8;
+    filter: alpha(opacity=80); 
+    transition: opacity .5s ease-out;
+    -moz-transition: opacity .5s ease-out;
+    -webkit-transition: opacity .5s ease-out;
+    -o-transition: opacity .5s ease-out;
+    _vertical-align: middle;
+    _margin-left: auto;
+    _margin-right: auto;
+    _margin-bottom: auto;
+    _margin-top: auto;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+.bigimage img:hover {
+    opacity: 1;
+    filter: alpha(opacity=100); 
+}
+
+.bigimage img:hover:before{
+    font-family: 'FontAwesome';
+    content: '\f01a';
+  }
+
+.thumbs {
+    alignment-adjust: middle;
+    _background: yellow;
+    position:absolute; 
+    bottom:0;
+}
+
+.thumbs img {
+    margin: 2px;
+    opacity: 0.8;
+    filter: alpha(opacity=80); 
+    transition: opacity .5s ease-out;
+    -moz-transition: opacity .5s ease-out;
+    -webkit-transition: opacity .5s ease-out;
+    -o-transition: opacity .5s ease-out;
+}
+
+.thumbs img:hover {
+    opacity: 1;
+    filter: alpha(opacity=100); 
+    
+}
+
+/* Font Awesome */
+
+[class^="icon-"], [class*=" icon-"], [class^="bigimage"] i{
+    display: inline-block;
+    width: 100%;
+}
+
+i {
+    opacity: 0;
+    display: inline-block;
+    width: 100%;
+    text-align:center;
+    _top: auto;
+    
+}
+i:hover {
+    opacity: 1;    
+}
