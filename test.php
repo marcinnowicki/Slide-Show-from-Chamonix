@@ -1,6 +1,8 @@
 <HEAD>
     <TITLE>Hello</TITLE>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
+    <link rel="stylesheet" href="CSS/SlideShow.css">
 </HEAD>
 <BODY>
     <?php
@@ -35,4 +37,39 @@
 
     </ul>
     <i class="fa-li fa fa-check-square"></i> <i class="fa-li fa fa-check-square"></i>&nbsp;<i class="fa-li fa fa-check-square"></i>
+    <hr/>
+    icons
+      <style>
+    .icon-facebook-sign:hover{color:lightblue; opacity: 1 ;}
+    .icon-twitter-sign:hover{color:#00BEF6}
+    .icon-google-plus-sign:hover{color:red;}
+  </style>
+      <li style="float:left;">
+      <!-- start social bookmarks -->
+      <div style="font-size: 32px; color: grey;">
+      <i class="icon-facebook-sign" style="margin-left: 0px; opacity: 0.1;"></i>
+      <i class="icon-twitter-sign" style="margin-left: -12px;"></i>
+      <i class="icon-linkedin-sign" style="margin-left: -12px;"></i>
+      <i class="icon-google-plus-sign" style="margin-left: -12px;"></i>
+      </div>
+      <!-- end social bookmarks -->
+    </li>
+    end icons
+    
+    <div class="bigimage" onMouseOver="document.getElementById('info').innerHTML=
+'Title: DSCF8784.jpg<br/>
+Author: Monokai<br/>
+id: tag:flickr.com,2005:/photo/16975957632<br/>
+published: 2015-03-30T11:19:01Z<br/>
+updated: 2015-03-30T11:19:01Z<br/>';">
+
+<div class="bigdesc">DSCF8784.jpg by Monokai</div>
+<A HREF="https://www.flickr.com/photos/monokai/16975957632/">
+<IMG SRC="https://farm9.staticflickr.com/8752/16975957632_be006976fd_b.jpg">
+<a href="#"><span class="fa fa-rocket icon-3x"></span></a>
+</A>
+</div>
+
+    <i style="z-index:100; top: 20px; " class="fa fa-rocket icon-4x"></i>
+    
 </BODY>
